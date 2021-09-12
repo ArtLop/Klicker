@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>klicker</title>
+
+<script>
+
+function fun(x) {
+
+document.getElementById(x).style.borderRight="5px solid transparent"
+
+document.getElementById(x).style.borderBottom="5px solid transparent"
+
+} 
+
+function funny(x){
+
+document.getElementById(x).style.borderRight="5px solid black"
+
+document.getElementById(x).style.borderBottom="5px solid black"
+
+}
+
+var cq=0
+
+function counter(){
+
+cq++
+
+document.querySelector("h2").innerHTML=cq
+
+if (cq==10) document.querySelector("h3").innerHTML="Неплохо кликаешь!"
+
+if (cq==101) document.querySelector("h3").innerHTML="Долматинец!"
+
+if (cq==200) document.querySelector("h3").innerHTML="Ого!"
+
+if (cq==300) document.querySelector("h3").innerHTML="Хватит кликать!"
+
+if (cq==400) document.querySelector("h3").innerHTML="Тебе нечего делать?"
+
+if (cq==500) document.querySelector("h3").innerHTML="😐"
+
+if (cq==1000) document.querySelector("h3").innerHTML="Зачем?.."
+
+if (cq==2000) document.querySelector("h3").innerHTML="Серьезно?.."
+
+if (cq==3000) document.querySelector("h3").innerHTML="Вау..."
+
+if (cq==4000) document.querySelector("h3").innerHTML="Довольно!!"
+
+if (cq==5000) document.querySelector("h3").innerHTML="Красиво..."
+
+if (cq==10000) document.querySelector("h3").innerHTML="Когда ты остановишься?"
+
+if (cq==50000) document.querySelector("h3").innerHTML="..."
+
+if (cq==100000) document.querySelector("h3").innerHTML="Сколько?"
+
+if (cq==500000) document.querySelector("h3").innerHTML="Это максимум..."
+
+if (cq==1000000) document.querySelector("h3").innerHTML="Обманул))"
+
+if (cq==5000000) document.querySelector("h3").innerHTML="На что ты тратишь свою жизнь??"
+
+if (cq==10000000) document.querySelector("h3").innerHTML="Все хорошо!?"
+
+if (cq==10010000) document.querySelector("h3").innerHTML="ОСТАНОВИСЬ!!!"
+
+if (cq==1000000000000) {
+    
+    document.querySelector("h3").innerHTML="Пока."
+
+    cq=0
+
+document.querySelector("h2").innerHTML=cq
+
+}
+
+}
+
+function restart(){
+
+document.querySelector("h3").innerHTML="Зачем обнуляешь?"
+
+
+
+cq=0
+
+document.querySelector("h2").innerHTML=cq
+
+}
+
+
+
+
+
+</script>
+
+</head>
+<body style="background: black; border-left: 25px double yellow; 
+            border-right: 25px double yellow; height: 100vh ; margin: 0; box-sizing: border-box; ">
+
+<h1 style="color: yellow; font-size: 75px; text-align:center ; margin-top: 0mm;
+           background-color: black; text-shadow: 5px 5px 15px yellow;"> КЛИКЕР </h1>
+
+<h2 style="color: yellow; font-size: 75px; text-align:center ; margin-top: 0mm;
+background-color: black; text-shadow: 5px 5px 15px yellow; margin-bottom: 0mm;"> 0 </h2>
+
+<h3 style="color: yellow; font-size: 75px; text-align:center ; margin-top: 0mm;
+background-color: black; text-shadow: 5px 5px 15px yellow; padding-top: 0mm;"> Привет! </h3>
+
+
+
+
+
+
+
+
+<p style="text-align: center;">
+
+<input type="button" value="КЛИК" style="background-color: yellow  ;
+    font-size: 25px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+         sans-serif; border-right:  5px solid 
+            rgb(0, 0, 0);  border-bottom:  5px solid 
+               rgb(0, 0, 0); padding: 10px 30px; text-align: center; margin-top: 12px; 
+                   box-shadow: 5px 5px 15px 5px yellow, -5px -5px 10px 5px yellow ;
+                      " onmousedown="fun('b1')" onmouseup="funny('b1') ;counter() " id="b1"> 
+
+</p>
+
+<p style="text-align: center;">
+
+    <input type="button" value="ОБНУЛЕНИЕ" style="background-color: yellow  ;
+        font-size: 25px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+             sans-serif; border-right:  5px solid 
+                rgb(0, 0, 0);  border-bottom:  5px solid 
+                   rgb(0, 0, 0); padding: 10px 30px; text-align: center; margin-top: 40px; 
+                       box-shadow: 5px 5px 15px 5px yellow, -5px -5px 10px 5px yellow ;
+                          " onmousedown="fun('b2')" onmouseup="funny('b2') ;restart() " id="b2"> 
+    
+    </p>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
